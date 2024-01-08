@@ -46,14 +46,23 @@ const Services = () => {
           <div className="grid grid-cols-1  sm:grid-cols-3  md:grid-cols-3 gap-14 md:gap-5 place-items-center">
             {ServicesData.map(({ id, img, name, description }) => {
               return (
-                <div key={id} className="max-w-[300px] group rounded-2xl bg-white dark:bg-gray-800 hover:bg-primary hover:text-white duration-300 p-4">
+                <div
+                  key={id}
+                  className="max-w-[300px] group rounded-2xl bg-white dark:bg-gray-800 dark:hover:bg-primary hover:text-white duration-300 shadow-xl"
+                >
                   <div className="h-[100px] ">
-                    <img src={img} alt="" className="max-w-[200px] mx-auto block transform -translate-y-14 group-hover:scale-105 group-hover:rotate-6 duration-300 "/>
+                    <img
+                      src={img}
+                      alt=""
+                      className="max-w-[200px] mx-auto block transform -translate-y-14 group-hover:scale-105 group-hover:rotate-6 duration-300 "
+                    />
                   </div>
-                <div>
+                  <div className="p-4 text-center">
                     <h1 className="text-xl font-bold">{name}</h1>
-                    <p className="text-gray-500 text-sm line-clamp-2">{description}</p>
-                </div>
+                    <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
+                      {description}
+                    </p>
+                  </div>
                 </div>
               );
             })}
