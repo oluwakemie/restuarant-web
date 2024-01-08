@@ -37,7 +37,7 @@ const Testimonial = () => {
   };
   return (
     <>
-      <div className="py-10 ">
+      <div className="py-10  bg-white dark:bg-gray-800 dark:text-white ">
         <div className="container">
           <div className="text-center mb-20 max-w-[400px] mx-auto">
             <p className="text-sm bg-clip-text text-transparent bg-radient-to-r from-primary to-secondary">
@@ -57,18 +57,18 @@ const Testimonial = () => {
               {testimonialData.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="my-6">
-                    <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg mx-4 rounded-xl dark:bg-gray-800 bg-primary/10 relative ">
+                    <div className="flex flex-col justify-center items-center gap-4 text-center shadow-lg mx-4 rounded-xl dark:bg-gray-500  bg-primary/10 relative ">
                       <img
                         src={img}
                         alt=""
                         className="rounded-full block mx-auto"
                       />{" "}
-                      <p className="text-gray-500 text-sm ">{text}</p>
+                      <p className="text-gray-500 text-sm dark:text-white">{text}</p>
                       <h1 className="text-xl font-bold ">{name}</h1>
-                      <p className="text-black/20 text-9xl font-serif absolute top-0 right-0">,,</p>
+                      <p className="text-black/20 text-9xl font-serif absolute top-0 right-0 dark:text-white">,,</p>
                     </div>
                   </div>
-                );
+                  );
               })}
             </Slider>
           </div>

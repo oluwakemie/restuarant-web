@@ -8,16 +8,16 @@ const DarkMode = () => {
   );
   const element = document.documentElement;
   React.useEffect(() => {
-    if (theme == "dark") {
+    if (theme === "dark") {
       element.classList.add("dark");
-      localStorage.setItem("theme", "light");
+      localStorage.setItem("theme", "dark");
     }else{
       element.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
   }, [theme]);
   const changeTheme = () => {
-    if (theme == "light") {
+    if (theme === "light") {
       setTheme("dark");
     } else {
       setTheme("light");

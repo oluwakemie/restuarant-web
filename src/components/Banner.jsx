@@ -7,7 +7,7 @@ import { GiFoodTruck } from "react-icons/gi";
 const Banner = () => {
   return (
     <>
-      <div className="min-h-[550px]">
+      <div className="min-h-[550px] bg-white dark:bg-gray-800 dark:text-white">
         <div>
           <div
             data-aos="slide-up"
@@ -28,7 +28,7 @@ const Banner = () => {
                 <h1 className="text-3xl sm:text-4xl font-bold">
                   lorem ipsum dolor
                 </h1>
-                <p className="text-sm text-gray-500 tracking-web leading-5">
+                <p className="text-sm  text-gray-500 tracking-web leading-5">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptas unde eum iusto ipsam reiciendis temporibus obcaecati
                   veniam deserunt pariatur accusantium iste quod, <br /> <br />{" "}

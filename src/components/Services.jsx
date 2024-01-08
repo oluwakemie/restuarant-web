@@ -28,7 +28,7 @@ const ServicesData = [
 const Services = () => {
   return (
     <>
-      <div className="py-10">
+      <div className="py-10 bg-white dark:bg-gray-800">
         <div className="container ">
           <div className="text-center mb-20 max-w-[400px] mx-auto">
             <p className="text-sm bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
@@ -58,7 +58,7 @@ const Services = () => {
                     />
                   </div>
                   <div className="p-4 text-center">
-                    <h1 className="text-xl font-bold">{name}</h1>
+                    <h1 className="text-xl font-bold text-black dark:text-white">{name}</h1>
                     <p className="text-gray-500 group-hover:text-white duration-300 text-sm line-clamp-2">
                       {description}
                     </p>
