@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import darkPng from "../../src/assets/website/dark-mode-button.png";
 import lightPng from "../../src/assets/website/light-mode-button.png";
 const DarkMode = () => {
@@ -7,7 +7,7 @@ const DarkMode = () => {
     localStorage.getItem("theme") : "light"
   );
   const element = document.documentElement;
-  React.useEffect(() => {
+  useEffect(() => {
     if (theme === "dark") {
       element.classList.add("dark");
       localStorage.setItem("theme", "dark");
@@ -15,7 +15,7 @@ const DarkMode = () => {
       element.classList.remove("dark");
       localStorage.setItem("theme", "light");
     }
-  }, [theme]);
+  }, [theme,element]);
   const changeTheme = () => {
     if (theme === "light") {
       setTheme("dark");
@@ -37,7 +37,7 @@ const DarkMode = () => {
         src={lightPng}
         onClick={changeTheme}
         alt=""
-        className="w-12   cursor-pointer drop-shadow-[1px_1px_rgba(0,0,0,0.1)] transition-all duration-300"
+        className="w-12 cursor-pointer drop-shadow-[1px_1px_rgba(0,0,0,0.1)] transition-all duration-300"
       />
     </div>
   );

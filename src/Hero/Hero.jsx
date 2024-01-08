@@ -67,10 +67,11 @@ const Hero = () => {
                 <img
                   key={item.id}
                   src={item.img}
+                  alt=""
                   className="max-w-[80px] h-[80px] object-contain inline-block hover:scale-105 duration-200"
                   onClick={() => {
                     setImageId(
-                      item.id == 1 ? Food1 : item.id == 2 ? Food2 : Food3
+                      item.id === 1 ? Food1 : item.id === 2 ? Food2 : Food3
                     );
                   }}
                 />

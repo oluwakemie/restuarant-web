@@ -14,7 +14,7 @@ const AppStore = () => {
                 Foodly is Available for Andriod and IOS
               </h1>
               <div className="flex flex-wrap justify-center sm:justify-start items-center ">
-                <a href="#">
+                <a href="www.google.com">
                   <img
                     src={PlayStoreImg}
                     alt="playstore"

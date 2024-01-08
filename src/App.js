@@ -13,6 +13,7 @@ const App = () => {
       <Hero />
       <Services />
       <Banner />
+      <AppStore/>
       <Testimonial />
       <Footer />
     </div>
